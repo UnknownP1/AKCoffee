@@ -1,37 +1,134 @@
 ﻿<script setup>
-import { Link } from '@inertiajs/vue3'
+import { Link, usePage } from "@inertiajs/vue3";
+import { computed } from "vue";
+
+const page = usePage();
+
+// cek apakah url saat ini cocok dengan path yang dikasih
+const isActive = (path) => {
+    if (path === "/") {
+        return page.url === "/";
+    }
+    return page.url.startsWith(path);
+};
 </script>
 
 <template>
-    <div class="fixed bottom-8 left-1/2 z-50 -translate-x-1/2">
-        <nav class="flex items-center gap-4 rounded-full bg-white/90 border border-slate-200 px-6 py-4 shadow-2xl backdrop-blur-xl">
-            <Link href="/" class="flex flex-col items-center gap-1 text-teal-700">
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-teal-700 text-white shadow">
-                    <span class="material-symbols-outlined">home</span>
+    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-max">
+        <nav
+            class="bg-white/80 backdrop-blur-xl border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-full px-10 py-4 flex items-center gap-10"
+        >
+            <Link
+                class="flex flex-col items-center justify-center gap-1 group"
+                href="/"
+                title="Beranda"
+            >
+                <div
+                    :class="[
+                        'w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
+                        isActive('/')
+                            ? 'bg-[#008080] text-white shadow-[0_0_20px_rgba(0,128,128,0.4)]'
+                            : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
+                    ]"
+                >
+                    <span class="material-symbols-outlined text-[24px]">home</span>
                 </div>
-                <span class="text-[10px] font-semibold">BERANDA</span>
+                <span
+                    :class="[
+                        'text-[10px] font-bold uppercase tracking-wider',
+                        isActive('/') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+                    ]"
+                    >BERANDA</span
+                >
             </Link>
 
-            <a href="#menu-section" class="flex flex-col items-center gap-1 text-slate-600 hover:text-teal-700 transition">
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-700">
-                    <span class="material-symbols-outlined">menu_book</span>
+            <Link
+                class="flex flex-col items-center justify-center gap-1 group"
+                href="/menu"
+                title="Menu"
+            >
+                <div
+                    :class="[
+                        'w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
+                        isActive('/menu')
+                            ? 'bg-[#008080] text-white shadow-[0_0_20px_rgba(0,128,128,0.4)]'
+                            : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
+                    ]"
+                >
+                    <span class="material-symbols-outlined text-[24px]">menu_book</span>
                 </div>
-                <span class="text-[10px] font-semibold">MENU</span>
-            </a>
+                <span
+                    :class="[
+                        'text-[10px] font-bold uppercase tracking-wider',
+                        isActive('/menu') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+                    ]"
+                    >MENU</span
+                >
+            </Link>
 
-            <a href="#lokasi-section" class="flex flex-col items-center gap-1 text-slate-600 hover:text-teal-700 transition">
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-700">
-                    <span class="material-symbols-outlined">place</span>
+            <Link
+                class="flex flex-col items-center justify-center gap-1 group"
+                href="/lokasi"
+                title="Lokasi"
+            >
+                <div
+                    :class="[
+                        'w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
+                        isActive('/lokasi')
+                            ? 'bg-[#008080] text-white shadow-[0_0_20px_rgba(0,128,128,0.4)]'
+                            : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
+                    ]"
+                >
+                    <span class="material-symbols-outlined text-[24px]">location_on</span>
                 </div>
-                <span class="text-[10px] font-semibold">LOKASI</span>
-            </a>
+                <span
+                    :class="[
+                        'text-[10px] font-bold uppercase tracking-wider',
+                        isActive('/lokasi') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+                    ]"
+                    >LOKASI</span
+                >
+            </Link>
 
-            <a href="#tentang-kami-section" class="flex flex-col items-center gap-1 text-slate-600 hover:text-teal-700 transition">
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-slate-700">
-                    <span class="material-symbols-outlined">info</span>
+            <Link
+                class="flex flex-col items-center justify-center gap-1 group"
+                href="/tentang"
+                title="Tentang Kami"
+            >
+                <div
+                    :class="[
+                        'w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300',
+                        isActive('/tentang')
+                            ? 'bg-[#008080] text-white shadow-[0_0_20px_rgba(0,128,128,0.4)]'
+                            : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
+                    ]"
+                >
+                    <span class="material-symbols-outlined text-[24px]">info</span>
                 </div>
-                <span class="text-[10px] font-semibold">TENTANG</span>
-            </a>
+                <span
+                    :class="[
+                        'text-[10px] font-bold uppercase tracking-wider',
+                        isActive('/tentang') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+                    ]"
+                    >TENTANG</span
+                >
+            </Link>
+
+            <Link
+                class="flex flex-col items-center justify-center gap-1 group"
+                href="/login"
+                title="Login Admin"
+            >
+                <div
+                    class="w-12 h-12 rounded-full text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary flex items-center justify-center transition-all duration-300"
+                >
+                    <span class="material-symbols-outlined text-[24px]">person</span>
+                </div>
+                <span
+                    class="text-[10px] font-bold text-[#6B7280] group-hover:text-primary uppercase tracking-wider"
+                    >LOGIN</span
+                >
+            </Link>
         </nav>
     </div>
 </template>

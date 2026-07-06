@@ -2,7 +2,7 @@
 <section class="relative w-full min-h-[85vh] overflow-hidden flex items-center">
     <div class="absolute inset-0 z-0">
         <img
-            src="https://lh3.googleusercontent.com/aida/AP1WRLu1XZ0Yv8xifvlfWr52S-sJvnJsvk83vi8NvvntlGKtLPvvlsARJjhgYHTPX5qdPh8Z_fSYNZjH5YNrO0LUZHwdNSfs04AHYmSv4XY5kp2LGMTpHPlnJ7wsyZmBMy42E88tNiBkb5UvdtS7n4PzFdFJZsrZV9uR8h75ul0U2E_txDyxxM6uolcfvvzMr1SrpKC7EmmdZp7WLF1r4Zb_1qreh940sKs3gnWw3hTRH6IFIfgKUfvlkrN49ME"
+            src="https://tse2.mm.bing.net/th/id/OIP.nxD5VRvHIORWjGsRNDwZiQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
             alt="Interior AK Coffee yang premium dan modern"
             class="w-full h-full object-cover"
         />
