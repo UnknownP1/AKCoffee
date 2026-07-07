@@ -74,4 +74,4 @@
 
 // Belum ada JavaScript yang diperlukan.
 
-</script>u
+</script>

@@ -18,6 +18,16 @@ Route::get('/menu', function () {
     return Inertia::render('MenuPage');
 })->name('menu');
 
+// --- TAMBAHAN BARU DARI KAEDE ---
+Route::get('/lokasi', function () {
+    return Inertia::render('Lokasi');
+})->name('lokasi');
+
+Route::get('/tentang', function () {
+    return Inertia::render('Tentang');
+})->name('tentang');
+// -------------------------------
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

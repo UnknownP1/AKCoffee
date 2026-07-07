@@ -10,7 +10,7 @@
                     <img
                         alt="AK Coffee Logo"
                         class="w-full h-full object-contain"
-                        src="Logo   AK.png"
+                        src="Ak Coffee.png"
                     />
                 </div>
                 <span
