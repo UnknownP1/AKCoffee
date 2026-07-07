@@ -1,17 +1,36 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import WebsiteLayout from '@/Layouts/WebsiteLayout.vue';
-import { onMounted } from 'vue'; // Import onMounted dari Vue
+import { onMounted } from 'vue';
 
-defineOptions({ layout: WebsiteLayout });
-
-// Fungsi ini akan menjalankan script Elfsight saat halaman dibuka
 onMounted(() => {
-    const script = document.createElement('script');
-    script.src = "https://elfsightcdn.com/platform.js";
-    script.async = true;
-    document.body.appendChild(script);
-});
+    // Load Elfsight platform script if not already loaded
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+        const script = document.createElement('script')
+        script.src = 'https://elfsightcdn.com/platform.js'
+        script.async = true
+        document.body.appendChild(script)
+    }
+
+    // Centering fix
+    const styleId = 'elfsight-center-fix'
+    if (!document.getElementById(styleId)) {
+        const style = document.createElement('style')
+        style.id = styleId
+        style.textContent = `
+            .elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            .elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d iframe {
+                margin-left: auto !important;
+                margin-right: auto !important;
+                display: block !important;
+            }
+        `
+        document.head.appendChild(style)
+    }
+})
 </script>
 
 <template>
@@ -159,26 +178,38 @@ onMounted(() => {
             </div>
         </section>
 
-        <!-- INSTAGRAM -->
-        <!-- INSTAGRAM (WIDGET DINAMIS ELFSIGHT) -->
         <!-- INSTAGRAM (WIDGET DINAMIS ELFSIGHT) -->
         <section class="py-2xl border-t border-outline-variant">
             <div class="text-center mb-xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-primary mb-sm">Ikuti Kami di Instagram</h2>
                 <p class="text-lg md:text-xl text-secondary">Dapatkan update terbaru dan keseruan harian di <span class="font-bold text-primary">@_ak_coffee</span></p>
             </div>
-            
-            <!-- Wadah luar untuk memastikan posisi flex center sempurna -->
+
             <div class="w-full flex justify-center items-center">
-                
-                <!-- Wadah pembatas (max-w-7xl) agar terlalu lebar tapi tetap rapi -->
                 <div class="w-full max-w-7xl mx-auto px-4 md:px-0">
-                    
-                    <!-- KUNCI UTAMA: Tambahkan style "width: 100%; display: block;" agar widget memenuhi wadah induknya dan otomatis center -->
-                    <div class="elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d" data-elfsight-app-lazy style="width: 100%; display: block;"></div>
-                    
+                    <div 
+                        class="elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d w-full mx-auto" 
+                        data-elfsight-app-lazy 
+                        style="width: 100%; display: block; margin: 0 auto;"
+                    ></div>
                 </div>
             </div>
         </section>
+
     </main>
 </template>
+
+<style>
+/* NOT scoped — Elfsight injects its widget after mount,
+   so scoped styles (data-v-xxxx attrs) won't match it */
+.elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.elfsight-app-a45e183f-00cf-458b-bb88-75f2fac5822d iframe {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+</style>
