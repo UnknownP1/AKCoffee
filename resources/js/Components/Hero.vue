@@ -24,21 +24,6 @@
                 oleh semangat komunitas. Tempat di mana ide mengalir sebebas kopi kami,
                 dirancang untuk menginspirasi setiap pengunjung.
             </p>
-
-            <div class="flex flex-wrap gap-4">
-                <a
-                    href="#menu-section"
-                    class="inline-flex items-center justify-center rounded-full bg-teal-700 px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-teal-800"
-                >
-                    Lihat Menu
-                </a>
-                <a
-                    href="#tentang-kami-section"
-                    class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-semibold text-slate-700 transition hover:border-teal-700 hover:text-teal-700"
-                >
-                    Tentang Kami
-                </a>
-            </div>
         </div>
     </div>
 </section>
