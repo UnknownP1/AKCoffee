@@ -1,6 +1,5 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
-import WebsiteLayout from '@/Layouts/WebsiteLayout.vue';
 import { onMounted } from 'vue';
 
 onMounted(() => {
@@ -31,6 +30,10 @@ onMounted(() => {
         document.head.appendChild(style)
     }
 })
+
+import WebsiteLayout from '@/Layouts/WebsiteLayout.vue';
+
+defineOptions({ layout: WebsiteLayout });
 </script>
 
 <template>
