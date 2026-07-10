@@ -6,12 +6,18 @@ import BestSeller from '@/Components/BestSeller.vue'
 import CoffeeOrigin from '@/Components/CoffeeOrigin.vue'
 import WhyChooseUs from '@/Components/WhyChooseUs.vue'
 import Location from '@/Components/Lokasi.vue'
+
+// Terima data bestSellers dari web.php
+defineProps({
+    bestSellers: Array
+})
 </script>
 
 <template>
     <WebsiteLayout>
         <Hero />
-        <BestSeller />
+        <!-- Kirim data bestSellers ke dalam komponen BestSeller -->
+        <BestSeller :bestSellers="bestSellers" />
         <CoffeeOrigin />
         <WhyChooseUs />
         <Location />

@@ -1,6 +1,8 @@
 <script setup>
-import OwnerLayout from '@/Layouts/OwnerLayout.vue'
+import AdminLayout from '@/Layouts/AdminLayout.vue';
+import { Head, Link, useForm } from '@inertiajs/vue3';
 
+defineOptions({ layout: AdminLayout });
 
 const employees = [
     {
@@ -8,7 +10,7 @@ const employees = [
         name: 'Ahmad',
         email: 'ahmad@akcoffee.com',
         role: 'Admin'
-    },
+    }   ,
     {
         id: 2,
         name: 'Budi',
@@ -17,15 +19,17 @@ const employees = [
     }
 ]
 
+const deleteMenu = (id) => {
+    if (confirm('Apakah kamu yakin ingin menghapus menu ini?')) {
+        useForm().delete(route('owner.menu.destroy', id));
+    }
+};
+
 </script>
 
 
 <template>
-
-    <OwnerLayout>
-
-
-        <!-- Header -->
+<!-- Header -->
         <div class="flex justify-between items-center mb-6">
 
             <div>
@@ -146,8 +150,4 @@ const employees = [
 
 
         </div>
-
-
-    </OwnerLayout>
-
 </template>

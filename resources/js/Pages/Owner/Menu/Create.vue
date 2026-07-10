@@ -1,249 +1,140 @@
 <script setup>
+import AdminLayout from '@/Layouts/AdminLayout.vue';
+import { Head, useForm, Link } from '@inertiajs/vue3';
+import { ref } from 'vue';
 
-import OwnerLayout from '@/Layouts/OwnerLayout.vue'
+defineOptions({ layout: AdminLayout });
 
+const props = defineProps({
+    currentBestSellers: Array
+});
+
+const form = useForm({
+    name: '',
+    category: '',
+    price: '',
+    status: 'Aktif',
+    description: '',
+    image: null,
+    is_best_seller: false,
+    best_seller_order: ''
+});
+
+const imagePreview = ref(null);
+const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        form.image = file;
+        imagePreview.value = URL.createObjectURL(file);
+    }
+};
+
+const submit = () => {
+    if (form.is_best_seller && form.best_seller_order) {
+        const conflict = props.currentBestSellers.find(item => 
+            String(item.best_seller_order) === String(form.best_seller_order)
+        );
+        if (conflict) {
+            if (!confirm(`⚠️ Konflik Posisi Best Seller!\n\nMenu "${conflict.name}" saat ini menempati urutan ke-${form.best_seller_order}.\n\nApakah Anda yakin ingin menggantikannya?`)) {
+                return;
+            }
+        }
+    }
+    form.post(route('owner.menu.store'));
+};
 </script>
 
-
 <template>
+    <Head title="Tambah Menu" />
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Tambah Menu Baru</h1>
 
-    <OwnerLayout>
-
-
-        <div class="max-w-3xl">
-
-
-            <!-- Header -->
-
-            <div class="mb-6">
-
-                <h1 class="text-2xl font-semibold text-gray-800">
-                    Tambah Menu
-                </h1>
-
-
-                <p class="text-sm text-gray-500">
-                    Tambahkan menu baru untuk AKCoffee
-                </p>
-
+        <form @submit.prevent="submit" class="space-y-6">
+            
+            <!-- Nama Menu -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Nama Menu</label>
+                <input v-model="form.name" type="text" class="w-full rounded-lg border-gray-300 shadow-sm focus:border-primary focus:ring-primary" placeholder="Contoh: Caffe Latte" />
+                <div v-if="form.errors.name" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.name }}</div>
             </div>
 
-
-
-
-            <!-- Form Card -->
-
-            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-
-
-                <form class="space-y-6">
-
-
-
-                    <!-- Image -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Gambar Menu
-                        </label>
-
-
-                        <input
-                            type="file"
-                            class="block w-full text-sm text-gray-600
-                            file:mr-4 file:py-2 file:px-4
-                            file:rounded-md file:border-0
-                            file:text-sm file:font-medium
-                            file:bg-gray-100 file:text-gray-700
-                            hover:file:bg-gray-200"
-                        />
-
-
+            <!-- Gambar Menu -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Gambar Menu</label>
+                <div class="flex items-center gap-4 mb-2">
+                    <div v-if="imagePreview" class="w-24 h-24 rounded-lg border border-gray-200 overflow-hidden shrink-0 bg-gray-100">
+                        <img :src="imagePreview" class="w-full h-full object-cover" />
                     </div>
-
-
-
-
-
-                    <!-- Name -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Nama Menu
-                        </label>
-
-
-                        <input
-                            type="text"
-                            placeholder="Contoh: Caffe Latte"
-                            class="w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                        />
-
-
-                    </div>
-
-
-
-
-
-                    <!-- Category -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Kategori
-                        </label>
-
-
-                        <select
-                            class="w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                        >
-
-                            <option>
-                                Coffee
-                            </option>
-
-
-                            <option>
-                                Non Coffee
-                            </option>
-
-
-                            <option>
-                                Snack
-                            </option>
-
-
-                        </select>
-
-
-                    </div>
-
-
-
-
-
-                    <!-- Price -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Harga
-                        </label>
-
-
-                        <input
-                            type="number"
-                            placeholder="15000"
-                            class="w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                        />
-
-
-                    </div>
-
-
-
-
-
-                    <!-- Description -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Deskripsi
-                        </label>
-
-
-                        <textarea
-                            rows="4"
-                            placeholder="Deskripsi menu..."
-                            class="w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                        ></textarea>
-
-
-                    </div>
-
-
-
-
-
-                    <!-- Status -->
-
-                    <div>
-
-                        <label class="block text-sm font-medium text-gray-700 mb-2">
-                            Status
-                        </label>
-
-
-                        <select
-                            class="w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                        >
-
-                            <option>
-                                Aktif
-                            </option>
-
-
-                            <option>
-                                Tidak Aktif
-                            </option>
-
-
-                        </select>
-
-
-                    </div>
-
-
-
-
-
-                    <!-- Button -->
-
-                    <div class="flex justify-end gap-3 pt-4">
-
-
-                        <button
-                            type="button"
-                            class="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50"
-                        >
-
-                            Cancel
-
-                        </button>
-
-
-
-                        <button
-                            type="submit"
-                            class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
-                        >
-
-                            Simpan
-
-                        </button>
-
-
-                    </div>
-
-
-
-
-                </form>
-
-
+                    <input type="file" @input="handleFileChange" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-primary/10 file:text-primary hover:file:bg-primary/20" accept="image/*" />
+                </div>
+                <div v-if="form.errors.image" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.image }}</div>
             </div>
 
+            <!-- Kategori & Harga -->
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Kategori Menu</label>
+                    <select v-model="form.category" class="w-full rounded-lg border-gray-300 shadow-sm">
+                        <option value="">Pilih Kategori</option>
+                        <option value="Minuman Khas">Minuman Khas</option>
+                        <option value="Kopi Klasik">Kopi Klasik</option>
+                        <option value="Non-Kopi">Non-Kopi</option>
+                        <option value="Camilan">Camilan</option>
+                    </select>
+                    <div v-if="form.errors.category" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.category }}</div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Harga (Rupiah)</label>
+                    <input v-model="form.price" type="number" class="w-full rounded-lg border-gray-300 shadow-sm" placeholder="15000" />
+                    <div v-if="form.errors.price" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.price }}</div>
+                </div>
+            </div>
 
+            <!-- Deskripsi Opsional -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Deskripsi Menu <span class="text-gray-400 font-normal">(Opsional)</span></label>
+                <textarea v-model="form.description" rows="3" class="w-full rounded-lg border-gray-300 shadow-sm focus:border-primary focus:ring-primary" placeholder="Tulis deskripsi produk yang menarik..."></textarea>
+                <div v-if="form.errors.description" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.description }}</div>
+            </div>
 
-        </div>
+            <!-- Status -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Status Tampilan</label>
+                <select v-model="form.status" class="w-full rounded-lg border-gray-300 shadow-sm">
+                    <option value="Aktif">Aktif (Tampil di Website)</option>
+                    <option value="Tidak Aktif">Tidak Aktif (Sembunyikan dari Website)</option>
+                </select>
+                <div v-if="form.errors.status" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.status }}</div>
+            </div>
 
+            <!-- Best Seller -->
+            <div class="border-t pt-4 mt-4">
+                <h3 class="font-medium text-gray-800 mb-4">Produk Terlaris (Hero Page)</h3>
+                <div class="flex items-center gap-4 flex-wrap">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" v-model="form.is_best_seller" class="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
+                        <span class="text-sm text-gray-700">Jadikan Produk Terlaris</span>
+                    </label>
+                    <div v-if="form.is_best_seller" class="flex items-center gap-2">
+                        <label class="text-sm text-gray-700">Urutan ke-</label>
+                        <select v-model="form.best_seller_order" class="rounded-lg border-gray-300 shadow-sm text-sm">
+                            <option value="">Pilih</option>
+                            <option value="1">1 (Gambar Paling Besar)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div v-if="form.errors.best_seller_order" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.best_seller_order }}</div>
+            </div>
 
-
-    </OwnerLayout>
-
-
+            <div class="flex justify-end gap-3 pt-4">
+                <Link href="/owner/menu" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200">Batal</Link>
+                <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700" :disabled="form.processing">
+                    Simpan Menu
+                </button>
+            </div>
+        </form>
+    </div>
 </template>
