@@ -89,7 +89,7 @@ const showBestSellers = ref(false);
                     leave-to-class="max-h-0 opacity-0 -translate-y-4"
                 >
                     <div v-show="showBestSellers" class="relative z-10 mt-2 w-full rounded-xl neon-container p-[2px]">
-                        <div class="neon-border w-full h-full rounded-xl bg-white p-4 shadow-sm border border-transparent overflow-hidden">
+                        <div class="neon-border w-full h-full rounded-xl bg-white p-4 shadow-sm border border-transparent">
                             
                             <div v-if="props.bestSellers.length === 0" class="py-4 text-center text-sm text-gray-400">
                                 Belum ada produk terlaris. Atur di Menu.
@@ -97,7 +97,7 @@ const showBestSellers = ref(false);
 
                             <!-- Loop Item: TANPA HARGA, hanya gambar & nama -->
                             <div v-else v-for="(item, index) in props.bestSellers" :key="item.id" 
-                                 class="flex items-center gap-4 p-3 bg-gray-50/50 rounded-lg hover:bg-primary/5 transition-all duration-300 border border-transparent hover:border-gray-200 relative overflow-hidden">
+                                 class="flex items-center gap-4 p-3 bg-gray-50/50 rounded-lg hover:bg-primary/5 transition-all duration-300 border border-transparent hover:border-gray-200 relative">
                                 
                                 <!-- Garis warna unik di kiri -->
                                 <div :class="['absolute inset-y-0 left-0 w-[4px]', ['bg-yellow-400', 'bg-blue-400', 'bg-green-400', 'bg-purple-400'][index]]"></div>
@@ -105,9 +105,9 @@ const showBestSellers = ref(false);
                                 <!-- Gambar dan Nama (Flexible dan tidak akan kepotong) -->
                                 <div class="flex items-center gap-3 ml-2 flex-1 min-w-0">
                                     <img :src="item.image ? `/storage/${item.image}` : '/default-coffee.jpg'" 
-                                         class="w-10 h-10 md:w-12 h-12 rounded-lg object-cover border border-gray-100 shrink-0 bg-white shadow-sm" />
+                                         class="w-10 h-10 md:w-12 md:h-12 rounded-lg object-cover border border-gray-100 shrink-0 bg-white shadow-sm" />
                                     <!-- Class truncate mencegah teks panjang memecah layout -->
-                                    <span class="font-medium text-gray-700 text-sm md:text-base truncate w-full">{{ item.name }}</span>
+                                    <span class="font-medium text-gray-700 text-sm md:text-base truncate flex-1">{{ item.name }}</span>
                                 </div>
                             </div>
 
