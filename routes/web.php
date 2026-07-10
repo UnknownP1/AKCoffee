@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Menu;
+use App\Models\Employee;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Owner\MenuController;
 use App\Http\Controllers\Owner\EmployeeController;
@@ -21,7 +22,7 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
-        'bestSellers' => $bestSellers // Kirim data ke Vue
+        'bestSellers' => $bestSellers 
     ]);
 });
 
@@ -41,9 +42,28 @@ Route::get('/tentang', function () {
     return Inertia::render('Tentang');
 })->name('tentang');
 
+// --- DASHBOARD ADMIN DENGAN DATA REAL-TIME ---
 Route::get('/dashboard', function () {
-    return Inertia::render('Owner/DashboardCRUD');
+    // 1. Total Menu
+    $totalMenus = Menu::count();
+
+    // 2. Total Admin / Karyawan
+    $totalAdmins = Employee::count();
+
+    // 3. 4 Produk Terlaris
+    $bestSellers = Menu::where('is_best_seller', true)
+                        ->whereNotNull('best_seller_order')
+                        ->orderBy('best_seller_order')
+                        ->take(4)
+                        ->get();
+
+    return Inertia::render('Owner/DashboardCRUD', [
+        'totalMenus' => $totalMenus,
+        'totalAdmins' => $totalAdmins,
+        'bestSellers' => $bestSellers
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
+// ---------------------------------------------
 
 // --- ROUTE UNTUK ADMIN / OWNER CRUD ---
 Route::middleware(['auth', 'verified'])->prefix('owner')->name('owner.')->group(function () {
