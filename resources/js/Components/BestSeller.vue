@@ -29,7 +29,10 @@ defineProps({
                      :alt="bestSellers[0].name" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-lg text-white">
                     <h2 class="text-2xl font-bold">{{ bestSellers[0].name }}</h2>
-                    <p class="text-sm opacity-90 mb-2">Nikmati kenikmatan dari racikan terbaik kami.</p>
+                    <!-- Deskripsi Dinamis -->
+                    <p class="text-sm opacity-90 mb-2 line-clamp-2">
+                        {{ bestSellers[0].description || 'Racikan spesial dari biji kopi pilihan dengan sentuhan khas AK Coffee.' }}
+                    </p>
                     <div class="text-lg font-bold">Rp {{ Number(bestSellers[0].price).toLocaleString() }}</div>
                 </div>
             </div>
@@ -45,7 +48,10 @@ defineProps({
                     </div>
                     <div class="flex-1">
                         <h3 class="font-headline-md text-headline-md font-bold text-on-surface">{{ bestSellers[1].name }}</h3>
-                        <p class="text-body-md text-secondary line-clamp-2">Tekstur lembut dengan sentuhan manis alami.</p>
+                        <!-- Deskripsi Dinamis -->
+                        <p class="text-body-md text-secondary line-clamp-2">
+                            {{ bestSellers[1].description || 'Tekstur lembut dengan sentuhan manis alami yang memanjakan lidah.' }}
+                        </p>
                         <div class="text-primary font-bold mt-1">Rp {{ Number(bestSellers[1].price).toLocaleString() }}</div>
                     </div>
                 </div>
@@ -58,7 +64,10 @@ defineProps({
                     </div>
                     <div class="flex-1">
                         <h3 class="font-headline-md text-headline-md font-bold text-on-surface">{{ bestSellers[2].name }}</h3>
-                        <p class="text-body-md text-secondary line-clamp-2">Klasik dengan cita rasa yang tak lekang waktu.</p>
+                        <!-- Deskripsi Dinamis -->
+                        <p class="text-body-md text-secondary line-clamp-2">
+                            {{ bestSellers[2].description || 'Klasik dengan cita rasa yang tak lekang waktu dan kualitas premium.' }}
+                        </p>
                         <div class="text-primary font-bold mt-1">Rp {{ Number(bestSellers[2].price).toLocaleString() }}</div>
                     </div>
                 </div>
@@ -71,7 +80,10 @@ defineProps({
                     </div>
                     <div class="flex-1">
                         <h3 class="font-headline-md text-headline-md font-bold text-on-surface">{{ bestSellers[3].name }}</h3>
-                        <p class="text-body-md text-secondary line-clamp-2">Paduan sempurna antara tekstur renyah dan rasa.</p>
+                        <!-- Deskripsi Dinamis -->
+                        <p class="text-body-md text-secondary line-clamp-2">
+                            {{ bestSellers[3].description || 'Paduan sempurna antara tekstur renyah dan rasa yang menggugah selera.' }}
+                        </p>
                         <div class="text-primary font-bold mt-1">Rp {{ Number(bestSellers[3].price).toLocaleString() }}</div>
                     </div>
                 </div>

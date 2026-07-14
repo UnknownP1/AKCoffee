@@ -16,35 +16,33 @@ defineOptions({ layout: WebsiteLayout });
             <span class="text-primary font-label-sm tracking-widest uppercase">Temukan Kami</span>
             <h1 class="font-display-lg text-display-lg leading-tight mt-md">Mampir ke <span class="text-primary">AK Coffee.</span></h1>
             <p class="font-body-lg text-body-lg text-secondary max-w-xl mt-md">
-                Nikmati suasana hangat dan tenang di sudut kota Samarinda. Tempat yang pas untuk mabar, kerja santai, atau sekadar ngopi sore.
+                Nikmati suasana hangat dan tenang di berbagai sudut kota Samarinda. Kini hadir di 3 lokasi strategis untuk menemani aktivitas Anda.
             </p>
         </section>
 
-        <!-- Main Content Area: Bento Grid Layout -->
-        <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- 3 Cabang Layout (Sejajar) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             
-            <!-- Map Card (KIRI - 8 Kolom) -->
-            <div class="md:col-span-8 bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden min-h-[500px] flex flex-col">
-                <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant">
+            <!-- CABANG 1: Samarinda Kota (Dengan Peta) -->
+            <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
+                <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant flex-wrap gap-2">
                     <h2 class="font-headline-md flex items-center gap-sm">
                         <span class="material-symbols-outlined text-primary">map</span>
-                        Peta Interaktif
+                        Cabang Samarinda Kota
                     </h2>
                     
-                    <!-- TOMBOL MAPS: Ini langsung terhubung ke link yang kamu kasih -->
                     <a 
                         href="https://maps.app.goo.gl/rvc3yGndgEQyb7PfA" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        class="flex items-center gap-xs text-primary font-label-md hover:underline transition-colors"
+                        class="flex items-center gap-xs text-primary font-label-md hover:underline transition-colors text-sm"
                     >
-                        Buka di Google Maps
+                        <span class="hidden sm:inline">Buka di Maps</span>
                         <span class="material-symbols-outlined text-sm">open_in_new</span>
                     </a>
                 </div>
                 
-                <!-- AREA PETA GOOGLE MAPS (Iframe langsung tanpa API Key) -->
-                <div class="flex-grow relative bg-surface-container w-full h-full min-h-[400px]">
+                <div class="h-64 md:h-80 w-full relative bg-surface-container">
                     <iframe
                         src="https://maps.google.com/maps?q=Jl.%20Ks%20Tubun%20Dalam%20No%2038%20B,%20Samarinda%20Kota,%20Kalimantan%20Timur&output=embed&z=15"
                         width="100%"
@@ -56,44 +54,113 @@ defineOptions({ layout: WebsiteLayout });
                         class="w-full h-full"
                     ></iframe>
                 </div>
+                
+                <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
+                    <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
+                    <div class="space-y-md">
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
+                            <p class="font-body-md text-on-surface text-sm">Jl. Ks Tubun Dalam No 38 B, Samarinda Kota, Kalimantan Timur 75112</p>
+                        </div>
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">schedule</span>
+                            <div>
+                                <p class="font-label-md text-sm">Jam Operasional</p>
+                                <p class="font-body-md text-sm">08.30 - 23.00 WITA</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
+                            <div>
+                                <p class="font-label-md text-sm">Hubungi Kami</p>
+                                <p class="font-body-md text-sm">+62 541 1234 5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Right Sidebar (KANAN - 4 Kolom) -->
-            <div class="md:col-span-4 space-y-gutter">
+            <!-- CABANG 2: Sungai Kunjang -->
+            <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
+                <div class="p-lg bg-surface border-b border-outline-variant">
+                    <h2 class="font-headline-md flex items-center gap-sm">
+                        <span class="material-symbols-outlined text-primary">location_city</span>
+                        Cabang Sungai Kunjang
+                    </h2>
+                </div>
                 
-                <!-- Gambar Interior (Dari AI Stitch) -->
-                <div class="h-64 rounded-xl overflow-hidden border border-outline-variant relative group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" 
+                <!-- Gambar placeholder agar sama rata -->
+                <div class="h-64 md:h-80 w-full bg-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center" 
                          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqvF_-D8FlBAbOSMd_YhaqPC_APKmXbmBwivm3-2ta1DdpLv3Ey5ZnYZI13WDvtW1lPDd8hdzaPyyCDAzdJz0hoij9FCHLiSlEovVJ_iJzIl8Z-Jt8VwrNnIaIUjphIIlzwg0wKKNF3W8u2lpEFBFa7SzbnFjsN94O5X2qFWgE4RhUldG6zpqNhu6GhGNwEGBR0wDR5tJvENIcboPvIOPcKx3PskbuwnIrkDx4MNR3mcCrTrqQnsvL1sdChOuwBZnAP6ZXnKS4Eh0');">
                     </div>
                 </div>
 
-                <!-- Detail Alamat Card (Hardcode sesuai keinginanmu) -->
-                <div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant">
-                    <h3 class="font-headline-md mb-md">Detail Alamat</h3>
+                <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
+                    <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
                         <div class="flex gap-md">
-                            <span class="material-symbols-outlined text-primary">location_on</span>
-                            <p class="font-body-md text-on-surface">Jl. Ks Tubun Dalam No 38 B, Samarinda Kota, Kalimantan Timur 75112</p>
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
+                            <p class="font-body-md text-on-surface text-sm">Jl. Pahlawan No. 21, Sungai Kunjang, Samarinda, Kalimantan Timur 75123</p>
                         </div>
                         <div class="flex gap-md">
-                            <span class="material-symbols-outlined text-primary">schedule</span>
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">schedule</span>
                             <div>
-                                <p class="font-label-md">Jam Operasional</p>
-                                <p class="font-body-md">Setiap Hari: 08.30 - 23.00 WITA</p>
+                                <p class="font-label-md text-sm">Jam Operasional</p>
+                                <p class="font-body-md text-sm">07.00 - 22.00 WITA</p>
                             </div>
                         </div>
                         <div class="flex gap-md">
-                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
                             <div>
-                                <p class="font-label-md">Hubungi Kami</p>
-                                <p class="font-body-md">+62 541 1234 5678</p>
+                                <p class="font-label-md text-sm">Hubungi Kami</p>
+                                <p class="font-body-md text-sm">+62 541 9876 5432</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
+
+            <!-- CABANG 3: Palaran -->
+            <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
+                <div class="p-lg bg-surface border-b border-outline-variant">
+                    <h2 class="font-headline-md flex items-center gap-sm">
+                        <span class="material-symbols-outlined text-primary">storefront</span>
+                        Cabang Palaran
+                    </h2>
+                </div>
+                
+                <div class="h-64 md:h-80 w-full bg-gray-100 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center" 
+                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCG9p5Bfp921nqrWR4Qkh8M-zh2hXQoRlaUUi8oU6Ju90VER0wFjX8X1ygeABxy7cQNmj9tfh0A9ZfHL1LWDrFsG5h7AqF69wC-6ULbGCc0OTxskLEg6_Q_FIHMNkJa_uYOtnCSMp97REz535RnxsKMOo19O9xg6m9YvG9bMkyJdp4dbthEf3NxhjUL9DwUEoQVplUNiMN_MrkNDXIhgPz-ewKR_5bwdrL2hP0OSX35SsiSYPMqzURcgA');">
+                    </div>
+                </div>
+
+                <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
+                    <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
+                    <div class="space-y-md">
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
+                            <p class="font-body-md text-on-surface text-sm">Komplek Citra Niaga Blok B No. 12, Palaran, Samarinda, Kalimantan Timur 75241</p>
+                        </div>
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">schedule</span>
+                            <div>
+                                <p class="font-label-md text-sm">Jam Operasional</p>
+                                <p class="font-body-md text-sm">09.00 - 22.00 WITA</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
+                            <div>
+                                <p class="font-label-md text-sm">Hubungi Kami</p>
+                                <p class="font-body-md text-sm">+62 541 5678 1234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         
     </main>
