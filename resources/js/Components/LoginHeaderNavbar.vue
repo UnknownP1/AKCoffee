@@ -9,7 +9,7 @@
                 <div
                     class="font-headline-md text-headline-md font-bold text-primary"
                 >
-                    AK Coffee
+                    Kedai AK
                 </div>
             </div>
             <div class="hidden md:flex items-center gap-lg">

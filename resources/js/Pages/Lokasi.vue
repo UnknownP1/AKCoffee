@@ -6,24 +6,24 @@ defineOptions({ layout: WebsiteLayout });
 </script>
 
 <template>
-    <Head title="Lokasi AK Coffee" />
+    <Head title="Lokasi Kedai AK" />
     
     <main class="flex-grow pb-2xl px-margin-mobile md:px-margin-desktop">
         
         <!-- Hero Section -->
         <section class="py-2xl text-center flex flex-col items-center">
-            <div class="font-headline-md text-headline-md font-bold text-primary mb-lg">AK Coffee</div>
+            <div class="font-headline-md text-headline-md font-bold text-primary mb-lg">Kedai AK</div>
             <span class="text-primary font-label-sm tracking-widest uppercase">Temukan Kami</span>
-            <h1 class="font-display-lg text-display-lg leading-tight mt-md">Mampir ke <span class="text-primary">AK Coffee.</span></h1>
+            <h1 class="font-display-lg text-display-lg leading-tight mt-md">Mampir ke <span class="text-primary">Kedai AK.</span></h1>
             <p class="font-body-lg text-body-lg text-secondary max-w-xl mt-md">
-                Nikmati suasana hangat dan tenang di berbagai sudut kota Samarinda. Kini hadir di 3 lokasi strategis untuk menemani aktivitas Anda.
+                Nikmati suasana hangat dan tenang di berbagai sudut kota Samarinda. Kini hadir di <strong>3 lokasi strategis</strong> untuk menemani aktivitas Anda.
             </p>
         </section>
 
         <!-- 3 Cabang Layout (Sejajar) -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             
-            <!-- CABANG 1: Samarinda Kota (Dengan Peta) -->
+            <!-- CABANG 1: Ks Tubun Dalam (Samarinda Kota) -->
             <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
                 <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant flex-wrap gap-2">
                     <h2 class="font-headline-md flex items-center gap-sm">
@@ -80,81 +80,114 @@ defineOptions({ layout: WebsiteLayout });
                 </div>
             </div>
 
-            <!-- CABANG 2: Sungai Kunjang -->
+            <!-- CABANG 2: M. Yamin (DIBEDAKAN) -->
             <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
-                <div class="p-lg bg-surface border-b border-outline-variant">
+                <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant flex-wrap gap-2">
                     <h2 class="font-headline-md flex items-center gap-sm">
-                        <span class="material-symbols-outlined text-primary">location_city</span>
-                        Cabang Sungai Kunjang
+                        <span class="material-symbols-outlined text-primary">map</span>
+                        Cabang M. Yamin
                     </h2>
+                    
+                    <a 
+                        href="https://www.google.com/maps/place/Astra+Motor+M+Yamin+Samarinda/@-0.4631705,117.1474247,17z/data=!3m1!4b1!4m6!3m5!1s0x2df679c8e59ffb85:0x36636aa1f45e955a!8m2!3d-0.4631705!4d117.1499996!16s%2Fg%2F11y3kyd7rw?entry=ttu&g_ep=EgoyMDI2MDcxMi4wIKXMDSoASAFQAw%3D%3D" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-xs text-primary font-label-md hover:underline transition-colors text-sm"
+                    >
+                        <span class="hidden sm:inline">Buka di Maps</span>
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
                 </div>
                 
-                <!-- Gambar placeholder agar sama rata -->
-                <div class="h-64 md:h-80 w-full bg-gray-100 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center" 
-                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqvF_-D8FlBAbOSMd_YhaqPC_APKmXbmBwivm3-2ta1DdpLv3Ey5ZnYZI13WDvtW1lPDd8hdzaPyyCDAzdJz0hoij9FCHLiSlEovVJ_iJzIl8Z-Jt8VwrNnIaIUjphIIlzwg0wKKNF3W8u2lpEFBFa7SzbnFjsN94O5X2qFWgE4RhUldG6zpqNhu6GhGNwEGBR0wDR5tJvENIcboPvIOPcKx3PskbuwnIrkDx4MNR3mcCrTrqQnsvL1sdChOuwBZnAP6ZXnKS4Eh0');">
-                    </div>
+                <div class="h-64 md:h-80 w-full relative bg-surface-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Astra+Motor+M+Yamin+Samarinda&output=embed&z=15"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full"
+                    ></iframe>
                 </div>
-
+                
                 <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
                     <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
-                            <p class="font-body-md text-on-surface text-sm">Jl. Pahlawan No. 21, Sungai Kunjang, Samarinda, Kalimantan Timur 75123</p>
+                            <p class="font-body-md text-on-surface text-sm">Jl. M. Yamin, Samarinda, Kalimantan Timur</p>
                         </div>
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">schedule</span>
                             <div>
                                 <p class="font-label-md text-sm">Jam Operasional</p>
-                                <p class="font-body-md text-sm">07.00 - 22.00 WITA</p>
+                                <p class="font-body-md text-sm"><strong>07.00 - 22.00 WITA</strong></p>
                             </div>
                         </div>
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
                             <div>
                                 <p class="font-label-md text-sm">Hubungi Kami</p>
-                                <p class="font-body-md text-sm">+62 541 9876 5432</p>
+                                <p class="font-body-md text-sm"><strong>+62 541 2345 6789</strong></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CABANG 3: Palaran -->
+            <!-- CABANG 3: Belimau (DIBEDAKAN) -->
             <div class="bg-surface-container-low rounded-xl border border-outline-variant overflow-hidden flex flex-col">
-                <div class="p-lg bg-surface border-b border-outline-variant">
+                <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant flex-wrap gap-2">
                     <h2 class="font-headline-md flex items-center gap-sm">
-                        <span class="material-symbols-outlined text-primary">storefront</span>
-                        Cabang Palaran
+                        <span class="material-symbols-outlined text-primary">map</span>
+                        Cabang Belimau
                     </h2>
+                    
+                    <a 
+                        href="https://maps.app.goo.gl/1TctMVFcxqmkknC58" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="flex items-center gap-xs text-primary font-label-md hover:underline transition-colors text-sm"
+                    >
+                        <span class="hidden sm:inline">Buka di Maps</span>
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
                 </div>
                 
-                <div class="h-64 md:h-80 w-full bg-gray-100 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center" 
-                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCG9p5Bfp921nqrWR4Qkh8M-zh2hXQoRlaUUi8oU6Ju90VER0wFjX8X1ygeABxy7cQNmj9tfh0A9ZfHL1LWDrFsG5h7AqF69wC-6ULbGCc0OTxskLEg6_Q_FIHMNkJa_uYOtnCSMp97REz535RnxsKMOo19O9xg6m9YvG9bMkyJdp4dbthEf3NxhjUL9DwUEoQVplUNiMN_MrkNDXIhgPz-ewKR_5bwdrL2hP0OSX35SsiSYPMqzURcgA');">
-                    </div>
+                <div class="h-64 md:h-80 w-full relative bg-surface-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Belimau+Samarinda&output=embed&z=15"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full"
+                    ></iframe>
                 </div>
-
+                
                 <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
                     <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
-                            <p class="font-body-md text-on-surface text-sm">Komplek Citra Niaga Blok B No. 12, Palaran, Samarinda, Kalimantan Timur 75241</p>
+                            <p class="font-body-md text-on-surface text-sm">Belimau, Samarinda, Kalimantan Timur</p>
                         </div>
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">schedule</span>
                             <div>
                                 <p class="font-label-md text-sm">Jam Operasional</p>
-                                <p class="font-body-md text-sm">09.00 - 22.00 WITA</p>
+                                <p class="font-body-md text-sm"><strong>09.00 - 23.00 WITA</strong></p>
                             </div>
                         </div>
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">call</span>
                             <div>
                                 <p class="font-label-md text-sm">Hubungi Kami</p>
-                                <p class="font-body-md text-sm">+62 541 5678 1234</p>
+                                <p class="font-body-md text-sm"><strong>+62 541 3456 7890</strong></p>
                             </div>
                         </div>
                     </div>

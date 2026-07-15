@@ -52,7 +52,7 @@ defineOptions({ layout: WebsiteLayout });
                     Produktivitas dalam <br><span class="text-on-surface">Kenyamanan.</span>
                 </h1>
                 <p class="font-body-lg text-body-lg text-secondary max-w-lg">
-                    AK Coffee adalah destinasi utama untuk para profesional dan kreatif di Samarinda. Kami menyediakan ruang yang dirancang khusus untuk mendukung fokus kerja, diskusi santai, dan momen istirahat yang berkualitas.
+                    Kedai AK adalah destinasi utama untuk para profesional dan kreatif di Samarinda. Kami menyediakan ruang yang dirancang khusus untuk mendukung fokus kerja, diskusi santai, dan momen istirahat yang berkualitas.
                 </p>
             </div>
             <div class="w-full md:w-1/2 relative">

@@ -6,7 +6,7 @@
             class="flex flex-col md:flex-row justify-between items-center px-lg w-full max-w-7xl mx-auto gap-md py-md"
         >
             <div class="font-label-md text-label-md text-secondary">
-                © 2024 AK Coffee. Artisan Excellence.
+                © 2024 Kedai AK. Artisan Excellence.
             </div>
             <div class="flex flex-wrap justify-center gap-lg">
                 <a

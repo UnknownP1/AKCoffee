@@ -12,15 +12,15 @@
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10">
         <div class="max-w-2xl">
             <span class="inline-block text-sm font-semibold uppercase tracking-[0.35em] text-teal-700 mb-6">
-                AK Coffee
+                Kedai AK
             </span>
 
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-                AK Coffee: Wadah Komunitas &amp; Kreativitas
+                Kedai AK: Wadah Komunitas &amp; Kreativitas
             </h1>
 
             <p class="text-lg md:text-xl text-slate-700 mb-10 max-w-xl">
-                AK Coffee bukan sekadar kedai kopi, melainkan ruang kreatif yang didorong
+                Kedai AK bukan sekadar kedai kopi, melainkan ruang kreatif yang didorong
                 oleh semangat komunitas. Tempat di mana ide mengalir sebebas kopi kami,
                 dirancang untuk menginspirasi setiap pengunjung.
             </p>

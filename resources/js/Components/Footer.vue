@@ -7,11 +7,11 @@
             <div class="text-center md:text-left">
 
                 <h2 class="font-headline-md text-headline-md font-bold text-primary mb-xs">
-                    AK Coffee
+                    Kedai AK
                 </h2>
 
                 <p class="font-label-md text-label-md text-on-surface-variant">
-                    © 2024 AK Coffee. Hak cipta dilindungi undang-undang.
+                    © 2024 Kedai AK. Hak cipta dilindungi undang-undang.
                 </p>
 
             </div>
@@ -23,21 +23,21 @@
                     href="#"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
-                    Instagram AK Coffee
+                    Instagram Kedai AK
                 </a>
 
                 <a
                     href="#"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
-                    Facebook AK Coffee
+                    Facebook Kedai AK
                 </a>
 
                 <a
                     href="#"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
-                    Twitter AK Coffee
+                    Twitter Kedai AK
                 </a>
 
                 <a
