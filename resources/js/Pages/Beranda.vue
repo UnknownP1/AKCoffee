@@ -1,4 +1,6 @@
 <script setup>
+import { Head } from '@inertiajs/vue3'
+
 import WebsiteLayout from '@/Layouts/WebsiteLayout.vue'
 
 import Hero from '@/Components/Hero.vue'
@@ -8,8 +10,10 @@ import WhyChooseUs from '@/Components/WhyChooseUs.vue'
 import Location from '@/Components/Lokasi.vue'
 </script>
 
-<template>
+<template>  
     <WebsiteLayout>
+    <Head title="Beranda" />
+
         <Hero />
         <BestSeller />
         <CoffeeOrigin />
