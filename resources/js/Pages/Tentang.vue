@@ -52,7 +52,7 @@ defineOptions({ layout: WebsiteLayout });
                     Produktivitas dalam <br><span class="text-on-surface">Kenyamanan.</span>
                 </h1>
                 <p class="font-body-lg text-body-lg text-secondary max-w-lg">
-                    Kedai AK adalah destinasi utama untuk para profesional dan kreatif di Samarinda. Kami menyediakan ruang yang dirancang khusus untuk mendukung fokus kerja, diskusi santai, dan momen istirahat yang berkualitas.
+                    AK Coffee adalah destinasi utama untuk para profesional dan kreatif di Samarinda. Kami menyediakan ruang yang dirancang khusus untuk mendukung fokus kerja, diskusi santai, dan momen istirahat yang berkualitas.
                 </p>
             </div>
             <div class="w-full md:w-1/2 relative">
@@ -60,7 +60,7 @@ defineOptions({ layout: WebsiteLayout });
                 <img 
                     alt="WFC Atmosphere at AK Coffee" 
                     class="w-full rounded-xl shadow-xl object-cover aspect-[1.1]" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8dPQjj3e_OaQbK82RnP7sNpLcI5w9FyoCrroWA-qYZNRi16v6ifSVAINRD6I_o4CFbeNCGu6dhZpMeoog-qlfR6nwdHjtF7071EiEtHgbe73V1uwQ845cFSzFYL506TE3t6JUwkmz2xn6vlAYVV1jvRB2AWEuirZwjzVacxv1SAJD8c3E-Naydih7CfrSle9SBarBikfP64TzUK2mbJ42zYa8_NGniT_aDE6fUDA0LghAhkNH-5c"
+                    src="CashierBar.jpeg"
                 >
             </div>
         </section>
@@ -102,7 +102,7 @@ defineOptions({ layout: WebsiteLayout });
                 <img 
                     alt="Interior yang nyaman untuk bekerja" 
                     class="absolute inset-0 w-full h-full object-cover" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw-bStQVwHDY_YbWY8h3fdBj1x729utE-kCpKTWwwFqve28KO3w4_O0GZPQqxuaqlYc4owy6eGqD_TYxHVvyyin-L4XkvZMftA0OOzVxM_M8XdicFSaQz-RpifKiWzwzlGVHKFwI-_SADX6V-q0-aAwZoaZwolzUtel9btreV16gnbSMWV8tNKD_SjEvN7NmbNHcIFoiLPuYz-TUxZO7v9eArxUXuv1RRR9GGMxj3A4DaHTLM6xlXfSQyJ3LYbA7sihdfLfq0XTgU"
+                    src="FrontRoom.jpeg"
                 >
                 <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center p-xl">
                     <div class="max-w-md text-on-primary">
@@ -125,16 +125,16 @@ defineOptions({ layout: WebsiteLayout });
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
                 <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
-                    <img alt="Interior AK Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw-bStQVwHDY_YbWY8h3fdBj1x729utE-kCpKTWwwFqve28KO3w4_O0GZPQqxuaqlYc4owy6eGqD_TYxHVvyyin-L4XkvZMftA0OOzVxM_M8XdicFSaQz-RpifKiWzwzlGVHKFwI-_SADX6V-q0-aAwZoaZwolzUtel9btreV16gnbSMWV8tNKD_SjEvN7NmbNHcIFoiLPuYz-TUxZO7v9eArxUXuv1RRR9GGMxj3A4DaHTLM6xlXfSQyJ3LYbA7sihdfLfq0XTgU">
+                    <img alt="Interior AK Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="FrontRoom.jpeg">
                 </div>
                 <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
-                    <img alt="Laptop on Table" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8dPQjj3e_OaQbK82RnP7sNpLcI5w9FyoCrroWA-qYZNRi16v6ifSVAINRD6I_o4CFbeNCGu6dhZpMeoog-qlfR6nwdHjtF7071EiEtHgbe73V1uwQ845cFSzFYL506TE3t6JUwkmz2xn6vlAYVV1jvRB2AWEuirZwjzVacxv1SAJD8c3E-Naydih7CfrSle9SBarBikfP64TzUK2mbJ42zYa8_NGniT_aDE6fUDA0LghAhkNH-5c">
+                    <img alt="Laptop on Table" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="BehindCounter.jpeg">
                 </div>
                 <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
-                    <img alt="Coffee Brewing" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw-bStQVwHDY_YbWY8h3fdBj1x729utE-kCpKTWwwFqve28KO3w4_O0GZPQqxuaqlYc4owy6eGqD_TYxHVvyyin-L4XkvZMftA0OOzVxM_M8XdicFSaQz-RpifKiWzwzlGVHKFwI-_SADX6V-q0-aAwZoaZwolzUtel9btreV16gnbSMWV8tNKD_SjEvN7NmbNHcIFoiLPuYz-TUxZO7v9eArxUXuv1RRR9GGMxj3A4DaHTLM6xlXfSQyJ3LYbA7sihdfLfq0XTgU">
+                    <img alt="Coffee Brewing" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="SuasanaMiddleRoom.jpeg">
                 </div>
                 <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
-                    <img alt="Casual Discussion" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8dPQjj3e_OaQbK82RnP7sNpLcI5w9FyoCrroWA-qYZNRi16v6ifSVAINRD6I_o4CFbeNCGu6dhZpMeoog-qlfR6nwdHjtF7071EiEtHgbe73V1uwQ845cFSzFYL506TE3t6JUwkmz2xn6vlAYVV1jvRB2AWEuirZwjzVacxv1SAJD8c3E-Naydih7CfrSle9SBarBikfP64TzUK2mbJ42zYa8_NGniT_aDE6fUDA0LghAhkNH-5c">
+                    <img alt="Casual Discussion" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="SuasanaFrontRoom.jpeg">
                 </div>
             </div>
         </section>
@@ -176,7 +176,7 @@ defineOptions({ layout: WebsiteLayout });
                     </div>
                 </div>
                 <div class="h-full min-h-[200px] rounded-lg overflow-hidden">
-                    <img alt="AK Coffee Location" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw-bStQVwHDY_YbWY8h3fdBj1x729utE-kCpKTWwwFqve28KO3w4_O0GZPQqxuaqlYc4owy6eGqD_TYxHVvyyin-L4XkvZMftA0OOzVxM_M8XdicFSaQz-RpifKiWzwzlGVHKFwI-_SADX6V-q0-aAwZoaZwolzUtel9btreV16gnbSMWV8tNKD_SjEvN7NmbNHcIFoiLPuYz-TUxZO7v9eArxUXuv1RRR9GGMxj3A4DaHTLM6xlXfSQyJ3LYbA7sihdfLfq0XTgU">
+                    <img alt="AK Coffee Location" class="w-full h-full object-cover opacity-80" src="OuterShop.jpeg">
                 </div>
             </div>
         </section>
