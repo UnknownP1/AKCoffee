@@ -13,12 +13,6 @@ import MenuSnack from '@/Components/MenuSnack.vue'
 import MenuFooter from '@/Components/MenuFooter.vue'
 </script>
 
-<template>
-        <WebsiteLayout>
-        <Header />
-        <Hero />
-=======
-
 const props = defineProps({
     menus: Array
 })
@@ -55,11 +49,7 @@ const snacks = computed(() => {
     }
     return items
 })
-<<<<<<< Updated upstream
 import { Head } from '@inertiajs/vue3'
-=======
-import { Head } from '@inertiajs/vue3';
->>>>>>> Stashed changes
 
 </script>
 
@@ -80,7 +70,7 @@ import { Head } from '@inertiajs/vue3';
         </WebsiteLayout>
 =======
         
-        <div id="k  opi">
+        <div id="kopi">
             <MenuSignatureDrinks :items="signatureDrinks" />
         </div>
         <div id="non-coffee">
