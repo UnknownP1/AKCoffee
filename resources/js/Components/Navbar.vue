@@ -14,10 +14,37 @@ const isActive = (path) => {
 </script>
 
 <template>
+<<<<<<< Updated upstream
     <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-max">
+=======
+    <!-- Wrapper Animasi -->
+    <div
+        class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-max transition-all duration-500 ease-in-out transform"
+        :class="[
+            showNavbar
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-24 opacity-0 pointer-events-none'
+        ]"
+    >
+        <!-- Navbar -->
+>>>>>>> Stashed changes
         <nav
             class="bg-white/80 backdrop-blur-xl border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-full px-10 py-4 flex items-center gap-10"
         >
+            <!-- Logo -->
+        <div
+            class="flex items-center justify-center shrink-0"
+            aria-label="AK Coffee"
+        >
+            <img
+                src="Ak Coffee.png"
+                alt="AK Coffee Logo"
+                class="h-12 md:h-14 w-auto object-contain select-none"
+                draggable="false"
+            />
+        </div>
+
+            <!-- Beranda -->
             <Link
                 class="flex flex-col items-center justify-center gap-1 group"
                 href="/"
@@ -31,17 +58,33 @@ const isActive = (path) => {
                             : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
                     ]"
                 >
+<<<<<<< Updated upstream
                     <span class="material-symbols-outlined text-[24px]">home</span>
+=======
+                    <span class="material-symbols-outlined text-[22px] md:text-[24px]">
+                        home
+                    </span>
+>>>>>>> Stashed changes
                 </div>
+
                 <span
                     :class="[
+<<<<<<< Updated upstream
                         'text-[10px] font-bold uppercase tracking-wider',
                         isActive('/') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+=======
+                        'text-[10px] font-bold uppercase tracking-wider transition-colors duration-300',
+                        isActive('/')
+                            ? 'text-[#008080]'
+                            : 'text-[#6B7280] group-hover:text-primary'
+>>>>>>> Stashed changes
                     ]"
-                    >BERANDA</span
                 >
+                    BERANDA
+                </span>
             </Link>
 
+            <!-- Menu -->
             <Link
                 class="flex flex-col items-center justify-center gap-1 group"
                 href="/menu"
@@ -55,17 +98,33 @@ const isActive = (path) => {
                             : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
                     ]"
                 >
+<<<<<<< Updated upstream
                     <span class="material-symbols-outlined text-[24px]">menu_book</span>
+=======
+                    <span class="material-symbols-outlined text-[22px] md:text-[24px]">
+                        menu_book
+                    </span>
+>>>>>>> Stashed changes
                 </div>
+
                 <span
                     :class="[
+<<<<<<< Updated upstream
                         'text-[10px] font-bold uppercase tracking-wider',
                         isActive('/menu') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+=======
+                        'text-[10px] font-bold uppercase tracking-wider transition-colors duration-300',
+                        isActive('/menu')
+                            ? 'text-[#008080]'
+                            : 'text-[#6B7280] group-hover:text-primary'
+>>>>>>> Stashed changes
                     ]"
-                    >MENU</span
                 >
+                    MENU
+                </span>
             </Link>
 
+            <!-- Lokasi -->
             <Link
                 class="flex flex-col items-center justify-center gap-1 group"
                 href="/lokasi"
@@ -79,17 +138,33 @@ const isActive = (path) => {
                             : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
                     ]"
                 >
+<<<<<<< Updated upstream
                     <span class="material-symbols-outlined text-[24px]">location_on</span>
+=======
+                    <span class="material-symbols-outlined text-[22px] md:text-[24px]">
+                        location_on
+                    </span>
+>>>>>>> Stashed changes
                 </div>
+
                 <span
                     :class="[
+<<<<<<< Updated upstream
                         'text-[10px] font-bold uppercase tracking-wider',
                         isActive('/lokasi') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
+=======
+                        'text-[10px] font-bold uppercase tracking-wider transition-colors duration-300',
+                        isActive('/lokasi')
+                            ? 'text-[#008080]'
+                            : 'text-[#6B7280] group-hover:text-primary'
+>>>>>>> Stashed changes
                     ]"
-                    >LOKASI</span
                 >
+                    LOKASI
+                </span>
             </Link>
 
+            <!-- Tentang -->
             <Link
                 class="flex flex-col items-center justify-center gap-1 group"
                 href="/tentang"
@@ -103,10 +178,18 @@ const isActive = (path) => {
                             : 'text-[#6B7280] group-hover:bg-primary/5 group-hover:text-primary'
                     ]"
                 >
+<<<<<<< Updated upstream
                     <span class="material-symbols-outlined text-[24px]">info</span>
+=======
+                    <span class="material-symbols-outlined text-[22px] md:text-[24px]">
+                        info
+                    </span>
+>>>>>>> Stashed changes
                 </div>
+
                 <span
                     :class="[
+<<<<<<< Updated upstream
                         'text-[10px] font-bold uppercase tracking-wider',
                         isActive('/tentang') ? 'text-[#008080]' : 'text-[#6B7280] group-hover:text-primary'
                     ]"
@@ -127,7 +210,16 @@ const isActive = (path) => {
                 <span
                     class="text-[10px] font-bold text-[#6B7280] group-hover:text-primary uppercase tracking-wider"
                     >LOGIN</span
+=======
+                        'text-[10px] font-bold uppercase tracking-wider transition-colors duration-300',
+                        isActive('/tentang')
+                            ? 'text-[#008080]'
+                            : 'text-[#6B7280] group-hover:text-primary'
+                    ]"
+>>>>>>> Stashed changes
                 >
+                    TENTANG
+                </span>
             </Link>
         </nav>
     </div>

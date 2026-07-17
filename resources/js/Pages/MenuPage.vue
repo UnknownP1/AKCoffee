@@ -7,7 +7,6 @@ import Hero from '@/Components/MenuHero.vue'
 import MenuQuickNav from '@/Components/MenuQuickNav.vue'
 import MenuGrid from '@/Components/MenuGrid.vue'
 import MenuSignatureDrinks from '@/Components/MenuSignatureDrinks.vue'
-import MenuClassicCoffee from '@/Components/MenuClassicCoffee.vue'
 import MenuNonCoffee from '@/Components/MenuNonCoffee.vue'
 import MenuSnack from '@/Components/MenuSnack.vue'
 <<<<<<< Updated upstream
@@ -56,21 +55,40 @@ const snacks = computed(() => {
     }
     return items
 })
+<<<<<<< Updated upstream
 import { Head } from '@inertiajs/vue3'
+=======
+import { Head } from '@inertiajs/vue3';
+>>>>>>> Stashed changes
 
 </script>
 
 <template>
     <Head title="Menu" />
     <WebsiteLayout>
+    <Head title="Menu" />
         <MenuHeaderLogo />
         <MenuHero />
 >>>>>>> Stashed changes
         <MenuQuickNav />
         <MenuGrid />
+<<<<<<< Updated upstream
         <MenuSignatureDrinks />
         <MenuClassicCoffee />
         <MenuNonCoffee />
         <MenuSnack />
         </WebsiteLayout>
+=======
+        
+        <div id="k  opi">
+            <MenuSignatureDrinks :items="signatureDrinks" />
+        </div>
+        <div id="non-coffee">
+            <MenuNonCoffee :items="nonCoffee" />
+        </div>
+        <div id="snacks">
+            <MenuSnack :items="snacks" />
+        </div>
+    </WebsiteLayout>
+>>>>>>> Stashed changes
 </template>

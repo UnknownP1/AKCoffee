@@ -1,11 +1,15 @@
 <template>
 <section class="menu-category-anchor max-w-7xl mx-auto px-6 md:px-10" id="signature">
         <div class="flex items-center gap-md mb-lg">
+<<<<<<< Updated upstream
             <h2
                 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest"
             >
                 Minuman Khas
             </h2>
+=======
+            <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest">Minuman Kopi</h2>
+>>>>>>> Stashed changes
             <div class="flex-grow h-px bg-outline-variant"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">

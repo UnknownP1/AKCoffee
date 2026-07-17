@@ -11,7 +11,11 @@
                 </h2>
 
                 <p class="font-label-md text-label-md text-on-surface-variant">
+<<<<<<< Updated upstream
                     © 2024 AK Coffee. Hak cipta dilindungi undang-undang.
+=======
+                    © 2022 Kedai AK.
+>>>>>>> Stashed changes
                 </p>
 
             </div>
@@ -27,9 +31,10 @@
                 </a>
 
                 <a
-                    href="#"
+                    href="https://www.akkreatif.com/"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
+<<<<<<< Updated upstream
                     Facebook AK Coffee
                 </a>
 
@@ -52,18 +57,13 @@
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
                     Syarat &amp; Ketentuan
+=======
+                    Website AK kreatif
+>>>>>>> Stashed changes
                 </a>
 
             </div>
-
-            <!-- Profile Button -->
-            <button
-                class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-white transition-all"
-            >
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-            </button>
+            
 
         </div>
 

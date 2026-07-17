@@ -6,7 +6,7 @@ import { Link } from '@inertiajs/vue3'
 <section class="relative overflow-hidden py-20" id="lokasi-section">
     <div class="absolute inset-0">
         <img
-            src="https://lh3.googleusercontent.com/aida/AP1WRLu1XZ0Yv8xifvlfWr52S-sJvnJsvk83vi8NvvntlGKtLPvvlsARJjhgYHTPX5qdPh8Z_fSYNZjH5YNrO0LUZHwdNSfs04AHYmSv4XY5kp2LGMTpHPlnJ7wsyZmBMy42E88tNiBkb5UvdtS7n4PzFdFJZsrZV9uR8h75ul0U2E_txDyxxM6uolcfvvzMr1SrpKC7EmmdZp7WLF1r4Zb_1qreh940sKs3gnWw3hTRH6IFIfgKUfvlkrN49ME"
+            src="OuterShop.jpeg"
             alt="Interior AK Coffee yang premium"
             class="h-full w-full object-cover"
         />
