@@ -90,11 +90,13 @@ defineOptions({ layout: WebsiteLayout });
                 </div>
             </div>
             <div class="md:col-span-4 bg-primary text-on-primary p-xl rounded-xl flex flex-col justify-center items-center text-center">
-                <span class="material-symbols-outlined text-[48px] mb-md">couch</span>
+                <!-- Ganti 'couch' dengan Logo AK Coffee -->
+                <img src="Ak Coffee.png" alt="AK Coffee Logo" class="w-12 h-12 mb-md object-contain" />
+                
                 <h3 class="font-headline-md text-headline-md mb-xs">Hangout Spot</h3>
                 <p class="font-label-md opacity-80 mb-lg">Tempat ternyaman untuk berbincang</p>
                 <div class="w-full h-px bg-on-primary opacity-20 mb-lg"></div>
-                <p class="font-body-md italic">"Inspirasi di setiap cangkir, kenyamanan di setiap sudut."</p>
+                <p class="font-body-md italic">"Inspirasi di setiap cangkir, kenyamanan <br>di setiap sudut."</p>
             </div>
             
             <!-- WORK MEET RELAX (Full width) -->
@@ -104,7 +106,7 @@ defineOptions({ layout: WebsiteLayout });
                     class="absolute inset-0 w-full h-full object-cover" 
                     src="FrontRoom.jpeg"
                 >
-                <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center p-xl">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/100 to-transparent flex items-center p-xl">
                     <div class="max-w-md text-on-primary">
                         <h3 class="font-headline-lg text-headline-lg mb-md">Work, Meet, &amp; Relax.</h3>
                         <p class="font-body-md mb-lg">
@@ -152,16 +154,7 @@ defineOptions({ layout: WebsiteLayout });
                             </div>
                             <div>
                                 <p class="text-label-sm text-secondary uppercase tracking-widest">WhatsApp</p>
-                                <p class="font-body-md font-bold text-on-surface">+62 541 1234 5678</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-md">
-                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                                <span class="material-symbols-outlined text-primary">mail</span>
-                            </div>
-                            <div>
-                                <p class="text-label-sm text-secondary uppercase tracking-widest">Email</p>
-                                <p class="font-body-md font-bold text-on-surface">hello@akcoffee.com</p>
+                                <p class="font-body-md font-bold text-on-surface">+62 852-2430-2550</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-md">

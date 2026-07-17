@@ -28,7 +28,7 @@ defineOptions({ layout: WebsiteLayout });
                 <div class="p-lg flex justify-between items-center bg-surface border-b border-outline-variant flex-wrap gap-2">
                     <h2 class="font-headline-md flex items-center gap-sm">
                         <span class="material-symbols-outlined text-primary">map</span>
-                        Cabang Samarinda Kota
+                        Cabang Ks Tubun Dalam
                     </h2>
                     
                     <a 
@@ -58,6 +58,16 @@ defineOptions({ layout: WebsiteLayout });
                 <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
                     <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
+                        <!-- TAMBAHAN DESKRIPSI TEMPAT -->
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">storefront</span>
+                            <div>
+                                <p class="font-label-md text-sm">Deskripsi Tempat</p>
+                                <strong class="font-body-md text-sm">Ruko 4 pintu sebrang wira guna</strong>
+                            </div>
+                        </div>
+                        <!-- END TAMBAHAN -->
+
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
                             <p class="font-body-md text-on-surface text-sm">Jl. Ks Tubun Dalam No 38 B, Samarinda Kota, Kalimantan Timur 75112</p>
@@ -115,6 +125,16 @@ defineOptions({ layout: WebsiteLayout });
                 <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
                     <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
+                        <!-- TAMBAHAN DESKRIPSI TEMPAT -->
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">storefront</span>
+                            <div>
+                                <p class="font-label-md text-sm">Deskripsi Tempat</p>
+                                <strong class="font-body-md text-sm">Di dalam honda dealer motor</strong>
+                            </div>
+                        </div>
+                        <!-- END TAMBAHAN -->
+
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
                             <p class="font-body-md text-on-surface text-sm">Jl. M. Yamin, Samarinda, Kalimantan Timur</p>
@@ -172,6 +192,16 @@ defineOptions({ layout: WebsiteLayout });
                 <div class="p-lg space-y-md bg-surface-container-lowest flex-1">
                     <h3 class="font-label-md text-label-md text-primary uppercase tracking-wider">Detail Alamat</h3>
                     <div class="space-y-md">
+                        <!-- TAMBAHAN DESKRIPSI TEMPAT -->
+                        <div class="flex gap-md">
+                            <span class="material-symbols-outlined text-primary text-sm shrink-0">storefront</span>
+                            <div>
+                                <p class="font-label-md text-sm">Deskripsi Tempat</p>
+                                <strong class="font-body-md text-sm">Di jalan belimau sesuai titik</strong>
+                            </div>
+                        </div>
+                        <!-- END TAMBAHAN -->
+
                         <div class="flex gap-md">
                             <span class="material-symbols-outlined text-primary text-sm shrink-0">location_on</span>
                             <p class="font-body-md text-on-surface text-sm">Belimau, Samarinda, Kalimantan Timur</p>
