@@ -1,3 +1,7 @@
+<script setup>
+// Belum ada JavaScript yang diperlukan.
+</script>
+
 <template>
     <footer class="bg-surface-container-lowest border-t border-outline-variant py-2xl">
 
@@ -11,15 +15,7 @@
                 </h2>
 
                 <p class="font-label-md text-label-md text-on-surface-variant">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                    © 2024 AK Coffee. Hak cipta dilindungi undang-undang.
-=======
-                    © 2022 Kedai AK.
->>>>>>> Stashed changes
-=======
-                    © 2024 Kedai AK. Hak cipta dilindungi undang-undang.
->>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
+                    © 2022 Kedai AK. 
                 </p>
 
             </div>
@@ -31,55 +27,18 @@
                     href="#"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
-                    Instagram Kedai AK
+                    Instagram AK Coffee
                 </a>
 
                 <a
                     href="https://www.akkreatif.com/"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                    Facebook AK Coffee
-=======
-                    Facebook Kedai AK
->>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
+                    Website AK Kreatif
                 </a>
-
-                <a
-                    href="#"
-                    class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-                >
-                    Twitter Kedai AK
-                </a>
-
-                <a
-                    href="#"
-                    class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-                >
-                    Kebijakan Privasi
-                </a>
-
-                <a
-                    href="#"
-                    class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
-                >
-                    Syarat &amp; Ketentuan
-=======
-                    Website AK kreatif
->>>>>>> Stashed changes
-                </a>
-
             </div>
-            
 
         </div>
 
     </footer>
 </template>
-
-<script setup>
-
-// Belum ada JavaScript yang diperlukan.
-
-</script>
