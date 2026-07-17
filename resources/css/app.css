@@ -10,3 +10,28 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.menu-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px -5px rgba(0, 128, 128, 0.15);
+}
+
+/* Tambahkan ini di paling bawah app.css */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Ukuran default aman agar tidak melebar */
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

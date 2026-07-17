@@ -4,24 +4,19 @@
         <div class="grid gap-16 md:grid-cols-2 items-center">
             <div>
                 <span class="block text-sm font-semibold uppercase tracking-[0.3em] text-teal-700 mb-4">
-                    Warisan Kami
+                    biji kopi berkualitas
                 </span>
 
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-                    Etika di Setiap Biji Kopi
+                    DARI BIJI KOPI PILIHAN
                 </h2>
 
                 <p class="text-lg text-slate-700 mb-6">
-                    Di AK Coffee, kami percaya bahwa cita rasa luar biasa dimulai dari
-                    sumbernya. Kami bermitra langsung dengan petani skala kecil di
-                    Ethiopia, Kolombia, dan Sumatra untuk memastikan praktik
-                    berkelanjutan dan kualitas premium.
+                    Di AK Coffee, kami percaya bahwa cita rasa luar biasa dimulai dari sumbernya. Kami memilih dengan teliti biji kopi yang akan kami gunakan dalam pembuatan kopi kami agar rasa dan kualitasnya melebihi ekspetasi.
                 </p>
 
                 <p class="text-lg text-slate-700 mb-10">
-                    Setiap panen dipilih dengan tangan dan disangrai di fasilitas lokal
-                    kami, menjaga profil unik asalnya sambil terus mengeksplorasi
-                    batasan rasa tradisional.
+                    Setiap biji diteliti dengan data yang ada, di bandingkan dan di rasakan secara langsung untuk menemukan biji kopi terbaik untuk cafe terbaik di Samarinda.
                 </p>
 
                 <div class="space-y-6">
@@ -32,6 +27,7 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <span class="material-symbols-outlined text-teal-700" style='font-variation-settings: "FILL" 1;'>handshake</span>
+<<<<<<< HEAD
                         <span class="text-base font-semibold text-slate-900">Kemitraan Perdagangan Adil Langsung</span>
 =======
                         <span
@@ -45,6 +41,9 @@
                             Biji kopi berkualitas
                         </span>
 >>>>>>> Stashed changes
+=======
+                        <span class="text-base font-semibold text-slate-900">Bji kopi berkualitas</span>
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
             </span>
 
             <h2 class="font-headline-lg text-headline-lg tosca-heading">
-                Kenapa Harus AK Coffee?
+                Kenapa Harus Kedai AK?
             </h2>
         </div>
 

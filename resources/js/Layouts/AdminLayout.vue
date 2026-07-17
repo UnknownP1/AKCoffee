@@ -3,10 +3,23 @@ import { Link, usePage } from '@inertiajs/vue3';
 import { ref } from 'vue';
 
 const user = usePage().props.auth.user;
+<<<<<<< HEAD
 const url = usePage().url;
 const showMobileMenu = ref(false);
 
 const isActive = (path) => url.startsWith(path);
+=======
+const showMobileMenu = ref(false);
+
+// HAPUS variabel url. Langsung baca usePage().url di dalam fungsi!
+const isActive = (path) => {
+    const currentUrl = usePage().url;
+    if (path === '/') {
+        return currentUrl === '/';
+    }
+    return currentUrl.startsWith(path);
+};
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
 </script>
 
 <template>
@@ -61,7 +74,11 @@ const isActive = (path) => url.startsWith(path);
 
         <div class="flex-1 flex flex-col min-h-screen relative">
             <header class="h-16 bg-white/80 backdrop-blur-md border-b border-gray-200 flex items-center justify-between px-4 md:px-8 sticky top-0 z-30 shrink-0 shadow-sm">
+<<<<<<< HEAD
                 <div class="flex items-center gap-2">
+=======
+                <div class="flex items-center gap-4">
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
                     <button @click="showMobileMenu = !showMobileMenu" class="p-2 -ml-2 rounded-lg text-gray-600 hover:bg-primary/10 md:hidden transition-colors">
                         <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
                     </button>
@@ -78,7 +95,10 @@ const isActive = (path) => url.startsWith(path);
                 </div>
             </header>
 
+<<<<<<< HEAD
             <!-- MAIN CONTENT: Padding ditambah p-8 md:p-12 agar mepetnya hilang, lega di tengah -->
+=======
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
             <main class="flex-1 p-8 md:p-12 w-full">
                 <slot />
             </main>

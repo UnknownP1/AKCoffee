@@ -1,7 +1,10 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3'
+<<<<<<< HEAD
 import { Head } from '@inertiajs/vue3'
 
+=======
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
 
 import LoginHeader from '@/Components/LoginHeaderNavbar.vue'
 import LoginForm from '@/Components/LoginForm.vue'
@@ -26,7 +29,11 @@ const submit = () => {
 </script>
 
 <template>
+<<<<<<< HEAD
     <Head title="Login"
+=======
+
+>>>>>>> bc03cc860391f658ebbe4b3cb8696c54fa2a930e
     <LoginHeader />
 
     <LoginForm

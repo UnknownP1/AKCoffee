@@ -15,7 +15,7 @@ import { Link } from '@inertiajs/vue3'
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Temukan AK Coffee
+            Temukan Kedai AK di Samarinda
         </h2>
         <p class="mx-auto max-w-2xl text-base md:text-lg text-white/90 mb-8">
             Kunjungi ruang kreatif kami dan rasakan pengalaman kopi yang tak terlupakan.
