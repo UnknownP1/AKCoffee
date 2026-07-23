@@ -59,7 +59,7 @@ onUnmounted(() => {
                 aria-label="AK Coffee"
             >
                 <img
-                    src="Ak Coffee.png"
+                    src="Ak_Coffee-removebg-preview.png"
                     alt="AK Coffee Logo"
                     class="h-12 md:h-14 w-auto object-contain select-none"
                     draggable="false"
