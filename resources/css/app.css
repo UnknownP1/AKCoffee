@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 .hero-gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.75) 35%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: 
+    /* Ini bagian bawah yang kamu minta (di baris paling atas agar menimpa bagian bawah) */
+    linear-gradient(to top, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 25%),
+    /* Ini kode asli temanmu (kiri ke kanan) - tetap dipertahankan 100% */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.75) 35%, rgba(255, 255, 255, 0) 100%);
 }
 
 .menu-card-hover {
