@@ -7,7 +7,7 @@ defineProps({
 <template>
     <div class="max-w-7xl mx-auto px-margin-desktop mb-2xl">
         <div class="flex items-center gap-md mb-lg">
-            <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest">Camilan</h2>
+            <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest">Makanan</h2>
             <div class="flex-grow h-px bg-outline-variant"></div>
         </div>
         
@@ -28,7 +28,7 @@ defineProps({
             </div>
         </div>
         <div v-else class="bg-gray-50 p-8 text-center rounded-xl border border-dashed border-gray-300 mt-md">
-            <p class="text-gray-400">Belum ada menu Camilan.</p>
+            <p class="text-gray-400">Belum ada menu Makanan.</p>
         </div>
     </div>
 </template>

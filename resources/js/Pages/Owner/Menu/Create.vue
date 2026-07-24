@@ -76,10 +76,9 @@ const submit = () => {
                     <label class="block text-sm font-medium text-gray-700 mb-1">Kategori Menu</label>
                     <select v-model="form.category" class="w-full rounded-lg border-gray-300 shadow-sm">
                         <option value="">Pilih Kategori</option>
-                        <option value="Minuman Khas">Minuman Khas</option>
-                        <option value="Kopi Klasik">Kopi Klasik</option>
+                        <option value="Minuman Khas">Minuman Kopi</option>
                         <option value="Non-Kopi">Non-Kopi</option>
-                        <option value="Camilan">Camilan</option>
+                        <option value="Camilan">Makanan</option>
                     </select>
                     <div v-if="form.errors.category" class="text-sm text-red-600 mt-1 font-medium">⚠️ {{ form.errors.category }}</div>
                 </div>
