@@ -8,7 +8,7 @@ defineProps({
     <div class="max-w-7xl mx-auto px-margin-desktop mb-2xl">
         <div class="flex items-center gap-md mb-lg">
             <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest">
-                Minuman Khas
+                Minuman Kopi
             </h2>
             <div class="flex-grow h-px bg-outline-variant"></div>
         </div>
@@ -50,7 +50,7 @@ defineProps({
             class="bg-gray-50 p-8 text-center rounded-xl border border-dashed border-gray-300 mt-md"
         >
             <p class="text-gray-400">
-                Belum ada menu Minuman Khas.
+                Belum ada menu Minuman Kopi.
             </p>
         </div>
     </div>
