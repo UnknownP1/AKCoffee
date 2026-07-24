@@ -2,7 +2,7 @@
 <section class="relative w-full min-h-[85vh] overflow-hidden flex items-center">
     <div class="absolute inset-0 z-0">
         <img
-            src="https://tse2.mm.bing.net/th/id/OIP.nxD5VRvHIORWjGsRNDwZiQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            src="HeroSection.png"
             alt="Interior AK Coffee yang premium dan modern"
             class="w-full h-full object-cover"
         />

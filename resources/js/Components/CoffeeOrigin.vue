@@ -22,10 +22,6 @@
                     <!-- Bagian ini sudah dibersihkan dari Git Conflict -->
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
-                            <span class="material-symbols-outlined text-teal-700" style='font-variation-settings: "FILL" 1;'>eco</span>
-                            <span class="text-base font-semibold text-slate-900">100% Asal Organik Bersertifikat</span>
-                        </div>
-                        <div class="flex items-center gap-4">
                             <span class="material-symbols-outlined text-teal-700" style='font-variation-settings: "FILL" 1;'>handshake</span>
                             <span class="text-base font-semibold text-slate-900">Kemitraan Perdagangan Adil Langsung</span>
                         </div>

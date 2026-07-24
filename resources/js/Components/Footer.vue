@@ -24,14 +24,14 @@
             <div class="flex flex-wrap justify-center gap-lg">
 
                 <a
-                    href="#"
+                    href="https://www.instagram.com/kedai_ak_/" target="_blank"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
                     Instagram AK Coffee
                 </a>
 
                 <a
-                    href="https://www.akkreatif.com/"
+                    href="https://www.akkreatif.com/" target="_blank"
                     class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200"
                 >
                     Website AK Kreatif
